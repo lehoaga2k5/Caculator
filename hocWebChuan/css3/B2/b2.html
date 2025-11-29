@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    section {
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 762px;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    section .hh {
+       
+        padding: 20px;
+        margin: 20px auto;
+        
+    }
+    section input {
+        padding: 10px 3px;
+        min-height: 30px;
+        min-width: 300px;
+        margin: 10px 0px;
+        font-size: 10px;
+        line-height: 1.6rem;
+    }
+    section .half {
+        margin-right: 12px;
+    }
+    section .second {
+        min-width: 615px;
+
+    }
+    section .message {
+        min-width: 615px;
+        min-height: 240px;
+        text-align: start;
+
+    }
+    section .hh p {
+        display: flex;
+        /* display: flex;
+        justify-content: flex-start; */
+    }
+    h2 {
+        padding: 0px 20px ;
+    }
+    button {
+        
+        padding: 14px;
+        text-align: center;
+        background-color: #7DCEFD;
+        border: 2px #45bbff solid;
+        border-radius: 4px;
+        color: #ffffff;
+        font-weight: 200;
+        transition: 0.3 ease-in-out ;
+    }
+    button:hover {
+        background-color: #0068a5;
+    }
+</style>
+<body>
+    <section>
+        <h2>Get in touch with us by filling contact form below</h2>
+        <form action="" class="hh">
+            <p><input type="email" placeholder="nhap email" class="half"> <input type="text" placeholder="nhap ho ten" class="half"></p>
+            <p><input type="text" placeholder="nhap subject"  class="second"></p>
+            <p><input type="text" placeholder="message" class="message" cols="50" rows="10" ></p>
+            <p><button class="submit">send message</button></p>
+            
+
+        </form>
+    </section>
+</body>
+</html>

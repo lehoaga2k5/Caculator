@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul {
+        list-style: none;
+    }
+    .samples {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    h2  {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin: 20px 0; 
+        align-items: center;
+    }   
+   
+     .line::before, .line::after {
+        content: "";
+        flex: 1;
+        height: 2px;
+        
+        background-color: #333;
+        
+
+     }
+     .line span {
+        padding: 0 20px;
+        background-color: white;
+     }
+    
+     .list {
+        display: flex;
+        gap: 20px;
+        
+        
+    }
+    .list li {
+            display: flex;
+            flex: 1;
+            overflow: hidden; /* Đề phòng ảnh nó lòi ra ngoài */
+            border-radius: 8px ;/* Bo góc */
+            justify-content: center
+    }
+    .list li img {
+        width: 90%;
+        height: auto;
+        display: block;
+    }
+</style>
+<body>
+    <section class="samples">
+
+        <h2 class="line"><span>Great examples built with bootslander</span></h2>
+        <ul class="list">
+            <li><img src="asset\dummy.jpg" alt=""></li>
+            <li><img src="asset\dummy.jpg" alt=""></li>
+            <li><img src="asset\dummy.jpg" alt=""></li>
+            <li><img src="asset\dummy.jpg" alt=""></li>
+        </ul>
+    </section>
+    
+</body>
+</html>

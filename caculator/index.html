@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .caculator {
+        max-width: 500px;
+        margin: 10px auto;
+        background-color: #47464633;
+        font-weight: bold;
+        font-size: 3rem;
+        padding: 20px;
+    }
+        .display {
+            padding-top: 10px;
+        }
+    
+    .display input {
+        
+        display: block;
+        border: none;
+       
+        margin-bottom: 20px;
+         width: 100%;
+        
+
+    }
+    .keys {
+        
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    }
+    .keys button {
+        border: none;
+        border-radius: 40px;
+        padding: 10px;
+        
+    }
+    .keys button:hover {
+        background-color: #47464686;
+        
+        
+    }
+    .operator {
+        background-color: rgb(255, 153, 0);
+    }
+      .move-right{
+      grid-column:3; /* cột 2 tới 3 */
+      grid-row:4;             /* hàng 4 */
+    }
+</style>
+<body>
+    <div class="caculator">
+        <div class="display" >
+            <input id="display" type="" readonly>
+        </div>
+        <div class="keys">
+            <button onclick="appendToDisplay('+')"class="operator" >+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+             <button onclick="appendToDisplay('8')">8</button>
+              <button onclick="appendToDisplay('9')">9</button>
+        
+            
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+              <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('x')"class="operator">x</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')"class="operator">/</button>
+            <button onclick="caculate('=')"class="operator move-right">=</button>
+            <button onclick="remove()" class="operator ">C</button>
+            
+        </div>
+        
+
+    </div>
+    
+</body>
+<script>
+
+   const display = document.getElementById("display")
+
+    function appendToDisplay(input){
+
+        display.value += input;
+    }
+    function caculate(){
+        try {
+        display.value = eval(display.value);
+        }
+        catch {
+            display.value = " error";
+        }
+        
+
+    }
+    function remove(){
+        display.value = "";   
+    }
+</script>
+</html>
