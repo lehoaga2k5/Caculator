@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Ternary Operator</h1>
+    <p id="demo"></p>
+     <button onclick="checkDay()"> check now</button>
+        <script>
+            function checkDay(){
+                let Day = new Date().getDay();
+                switch(Day){
+                    case 6: text = ' to day is sarturday'
+                    break;
+                    case 0:
+                    text = "Today is Sunday";
+                    break;
+                    default:
+                        text = "Looking forward to the Weekend";
+                }
+                document.getElementById('demo').innerHTML = text;
+
+            }
+           
+            
+        </script>
+</body>
+</html>

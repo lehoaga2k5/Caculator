@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Ternary Operator</h1>
+    <p id="demo"></p>
+     <button onclick="discount()"> check now</button>
+        <script>
+            function discount(){
+                let isMember = true;
+                let discountP = (isMember) ? 0.2 : 0
+                document.getElementById('demo').innerHTML = discountP
+
+            }
+
+            function checkAge(){
+                let age = 11
+                let text = (age<18) ? 'minor' : ' adult'
+                document.getElementById('demo').innerHTML = text
+
+            }
+            
+        </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>type your age</p>
+<input id="age" value="18" />
+<button onclick="isYoung()">check it</button>
+
+<p id="demo"></p>
+    
+<script>
+    function isYoung(){
+        let age = Number(document.getElementById('age').value);
+        let textOut; 
+        if(isNaN(age)){
+             textOut = " its is not a number"
+        }
+        else{
+            textOut = (age>18) ? "too old " : " young enough";
+
+        }
+        document.getElementById('demo').innerHTML = textOut + " to vote "
+
+    }
+
+
+
+</script>
+
+</body>
+</html>

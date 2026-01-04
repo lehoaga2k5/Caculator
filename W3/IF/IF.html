@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>chech the hour</h1>
+        <button onclick="driveContry()"> check now</button>
+        <p id="demo"></p>
+        <script>
+            function checkTime(){
+                let hour = new Date().getHours();
+                    if(hour<18){
+                        document.getElementById('demo').innerHTML= " good afternoon"
+                    }
+                    else {
+                        document.getElementById('demo').innerHTML= " good evening"
+                    }
+            
+            }
+            function driveContry() {
+
+                let age = 16
+                let contry ='usa';
+                let text = ' u can not drive ';
+                if (contry= 'usa') {
+                    if(age>=16){
+                        text = ' u can drive'
+                    }
+
+                }
+                 document.getElementById('demo').innerHTML= text
+            }
+        </script>
+    </body>
+    </html>

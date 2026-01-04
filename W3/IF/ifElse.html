@@ -1,0 +1,64 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+       <h2>JavaScript Math.random()</h2>
+
+       
+
+        <button onclick="lucky()"> check now</button>
+        <p id="demo"></p>
+        <script>
+
+
+            function lucky(){
+                let text;
+
+                if(Math.random()<0.5){
+                    text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+                }
+                else{
+                      text = "<a href='https://wwf.org'>Visit WWF</a>";
+
+                }
+                document.getElementById('demo').innerHTML = text
+
+
+            }
+
+            function checkTime(){
+                let hour = new Date().getHours();
+                let text;
+                    if(hour<10){
+                        text = ' good morning '
+                    }
+                    else if(hour<20) {
+                        text = ' good day '
+                    }
+                    else {
+                        text = ' good evening'
+                    }
+                    document.getElementById('demo').innerHTML= text
+
+            
+            }
+            function driveContry() {
+
+                let age = 16
+                let contry ='usa';
+                let text = ' u can not drive ';
+                if (contry= 'usa') {
+                    if(age>=16){
+                        text = ' u can drive'
+                    }
+
+                }
+                 document.getElementById('demo').innerHTML= text
+            }
+        </script>
+    </body>
+    </html>
